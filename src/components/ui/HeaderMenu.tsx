@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 const HeaderMenu = () => (
     <header className="container mx-auto px-4 py-6 ">
         <nav className="flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold text-blue-600">
+            <Link to="https://sunrisepipes-3d.vercel.app/" className="text-2xl font-bold text-blue-600">
                 <span className="text-yel">Sunrise</span>
                 <span className="text-ora">Pipes</span>
                 <span className="text-blu">.in</span>
