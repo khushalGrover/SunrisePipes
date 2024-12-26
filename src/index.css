@@ -125,6 +125,38 @@
     @apply bg-background text-foreground;
   }
 }
-.custom__scrollType{scroll-snap-type: x mandatory;}
-.hitesh{scroll-snap-align: end;  min-width:100vh;   scroll-snap-align: start;}
 
+
+
+/* Watermark for sections */
+.section-watermark {
+  position: relative;
+}
+
+.section-watermark::before,
+.section-watermark::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2; /* Transparency for watermark effect */
+}
+
+/* Orange circle in top-left corner */
+.section-watermark::before {
+  top: 0;
+  left: 0;
+  width: 10rem; /* Adjust size as needed */
+  height: 10rem;
+  background-color: var(--color-orange);
+  border-radius: 50%; /* Makes it circular */
+}
+
+/* Blue pipe shape in bottom-right corner */
+.section-watermark::after {
+  bottom: 0;
+  right: 0;
+  width: 12rem; /* Adjust width as needed */
+  height: 1rem; /* Pipe height */
+  background-color: var(--color-blue);
+  border-radius: 0.5rem; /* Rounded pipe edges */
+}
