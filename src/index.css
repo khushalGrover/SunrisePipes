@@ -2,6 +2,9 @@
 
 /* ... */
 
+
+
+
 @layer base {
   :root {
     --color-orange:  #f36b25;
@@ -137,13 +140,13 @@
 .section-watermark::after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.2; /* Transparency for watermark effect */
 }
 
 /* Orange circle in top-left corner */
 .section-watermark::before {
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 10rem; /* Adjust size as needed */
   height: 10rem;
@@ -153,7 +156,7 @@
 
 /* Blue pipe shape in bottom-right corner */
 .section-watermark::after {
-  bottom: 0;
+  top: 0;
   right: 0;
   width: 12rem; /* Adjust width as needed */
   height: 1rem; /* Pipe height */
