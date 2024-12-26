@@ -17,7 +17,7 @@ export default function LandingPage() {
 
       <HeaderMenu />
 
-      <main className="mx-2 ">
+      <main className="mx-2  md:mx-20">
         <section className="text-center w-full h-screen flex-1 flex items-center justify-center flex-col section-watermark">
           <p className="text-xl text-primary/80 mb-2">Welcome to</p>
           <h1 className="text-3xl font-montserrat font-extrabold text-gray-900 mb-6 md:text-5xl">

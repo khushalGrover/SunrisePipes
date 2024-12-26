@@ -16,9 +16,9 @@ const HeaderMenu = () => {
 
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container flex h-14 items-center">
-                <div className="mr-4 hidden md:flex">
+        <header className="sticky top-0 z-50 w-full border-b bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <div className="flex h-14 w-full items-center">
+                <div className="hidden md:flex w-full justify-around">
                     <Link to="https://sunrisepipes-3d.vercel.app/" className="mr-6 flex items-center space-x-2">
                         <span className="text-2xl font-bold">
                             <span className="text-yel">Sunrise</span>
