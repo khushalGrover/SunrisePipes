@@ -92,7 +92,7 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full bg-blu">Send Message</Button>
+            <Button type="submit" className="w-full">Send Message</Button>
           </form>
         </Form>
       </CardContent>

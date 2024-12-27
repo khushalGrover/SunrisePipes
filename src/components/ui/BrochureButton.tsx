@@ -16,7 +16,7 @@ export function BrochureButton() {
 
   const handleDownload = () => {
     console.log("Downloading brochure...")
-    // window.open('/path-to-your-brochure.pdf', '_blank')
+    window.open('./SunriseCompanyProfilev.4.2.pdf', '_blank')
     setIsDialogOpen(false)
   }
 
