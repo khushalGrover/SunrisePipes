@@ -1,4 +1,3 @@
-import { Description } from "@radix-ui/react-dialog";
 
 // product Object which contains all the product details
 const products = {
@@ -8,7 +7,7 @@ const products = {
 		bis: "IS: 4984:2016",
 		description:
 			"HDPE Pipes are manufactured from virgin prime-grade HDPE (High-Density Polyethylene) as per BIS specifications (IS: 4984:2016). They are used all over the world for applications such as water mains, gas mains, sewer mains, slurry transfer lines, rural irrigation, fire systems, etc.",
-		imageUrls: ["", ""],
+		imageUrls: ["./hdpe1", "./hdpe2"],
 		minRange: 20,
 		maxRange: 200,
 		material: ["PE-63", "PE-80", "PE-100"],
