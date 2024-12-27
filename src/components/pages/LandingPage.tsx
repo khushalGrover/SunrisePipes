@@ -1,24 +1,18 @@
 import { HeaderMenu } from "@/components/ui/HeaderMenu";
 import CTASection from "@/components/ui/CTASection";
 import { Footer } from "@/components/ui/Footer";
-// import { Button } from "@/components/ui/button"
+
 
 export default function LandingPage() {
-
-  // const handleButtonClick = () => {
-  //   console.log("Get Started button clicked!");
-  //   alert("Get Started button clicked!");
-  // };
-
-
+  
   return (
 
     <div className="min-h-screen flex flex-col bg-primary-foreground">
 
       <HeaderMenu />
 
-      <main className="mx-2  md:mx-20">
-        <section className="text-center w-full h-screen flex-1 flex items-center justify-center flex-col section-watermark">
+      <main className="">
+        <section className="text-center h-screen w-full flex-1 flex flex-col items-center justify-center section-watermark">
           <p className="text-xl text-primary/80 mb-2">Welcome to</p>
           <h1 className="text-3xl font-montserrat font-extrabold text-gray-900 mb-6 md:text-5xl">
             <span className="text-yel">Sunrise</span>
@@ -28,7 +22,7 @@ export default function LandingPage() {
         </section>
 
 
-        <section className="text-center w-full h-screen my-16 flex-1 flex items-center justify-center flex-col section-watermark">
+        <section className="text-center w-full flex-1 flex items-center justify-center flex-col section-watermark ">
 
           <h1 className="text-3xl font-montserrat font-extrabold text-gray-900 mb-6 md:text-5xl">
             <span className="text-yel">Our</span>
@@ -38,7 +32,7 @@ export default function LandingPage() {
         </section>
 
 
-        <section className="text-center w-full h-screen my-16 flex-1 flex items-center justify-center flex-col section-watermark">
+        <section className="text-center w-full flex-1 flex items-center justify-center flex-col section-watermark ">
 
           <h1 className="text-3xl font-montserrat font-extrabold text-gray-900 mb-6 md:text-5xl">
             <span className="text-yel">Our</span>
@@ -48,7 +42,7 @@ export default function LandingPage() {
         </section>
 
 
-        <section className="text-center w-full h-screen my-16 flex-1 flex items-center justify-center flex-col section-watermark">
+        <section className="text-center w-full flex-1 flex items-center justify-center flex-col section-watermark ">
 
           <h1 className="text-3xl font-montserrat font-extrabold text-gray-900 mb-6 md:text-5xl">
             <span className="text-yel">Why</span>
@@ -60,6 +54,7 @@ export default function LandingPage() {
         </section>
 
       </main>
+
       <CTASection />
       <Footer />
     </div>

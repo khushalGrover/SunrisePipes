@@ -1,165 +1,167 @@
-@tailwind base;@tailwind components;@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* ... */
 
-
-
-
 @layer base {
-  :root {
-    --color-orange:  #f36b25;
-    
-    --color-yellow: #ffae12;
-  
-    --color-blue: #307fe2;
-        
-    --background: 0 0% 100%;
+	:root {
+		--color-orange: #f36b25;
 
-    --foreground: 240 10% 3.9%;
+		--color-yellow: #ffae12;
 
-    --card: 0 0% 100%;
+		--color-blue: #307fe2;
 
-    --card-foreground: 240 10% 3.9%;
+		--background: 0 0% 100%;
 
-    --popover: 0 0% 100%;
+		--foreground: 240 10% 3.9%;
 
-    --popover-foreground: 240 10% 3.9%;
+		--card: 0 0% 100%;
 
-    --primary: 240 5.9% 10%;
+		--card-foreground: 240 10% 3.9%;
 
-    --primary-foreground: 0 0% 98%;
+		--popover: 0 0% 100%;
 
-    --secondary: 240 4.8% 95.9%;
+		--popover-foreground: 240 10% 3.9%;
 
-    --secondary-foreground: 240 5.9% 10%;
+		--primary: 240 5.9% 10%;
 
-    --muted: 240 4.8% 95.9%;
+		--primary-foreground: 0 0% 98%;
 
-    --muted-foreground: 240 3.8% 46.1%;
+		--secondary: 240 4.8% 95.9%;
 
-    --accent: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
 
-    --accent-foreground: 240 5.9% 10%;
+		--muted: 240 4.8% 95.9%;
 
-    --destructive: 0 84.2% 60.2%;
+		--muted-foreground: 240 3.8% 46.1%;
 
-    --destructive-foreground: 0 0% 98%;
+		--accent: 240 4.8% 95.9%;
 
-    --border: 240 5.9% 90%;
+		--accent-foreground: 240 5.9% 10%;
 
-    --input: 240 5.9% 90%;
+		--destructive: 0 84.2% 60.2%;
 
-    --ring: 240 10% 3.9%;
+		--destructive-foreground: 0 0% 98%;
 
-    --chart-1: 12 76% 61%;
+		--border: 240 5.9% 90%;
 
-    --chart-2: 173 58% 39%;
+		--input: 240 5.9% 90%;
 
-    --chart-3: 197 37% 24%;
+		--ring: 240 10% 3.9%;
 
-    --chart-4: 43 74% 66%;
+		--chart-1: 12 76% 61%;
 
-    --chart-5: 27 87% 67%;
+		--chart-2: 173 58% 39%;
 
-    --radius: 0.5rem;
+		--chart-3: 197 37% 24%;
 
-   
+		--chart-4: 43 74% 66%;
 
-    --myBlue: 240 5.9% 10%;
-  }
-  .dark {
+		--chart-5: 27 87% 67%;
 
-    --background: 240 10% 3.9%;
+		--radius: 0.5rem;
 
-    --foreground: 0 0% 98%;
+		--myBlue: 240 5.9% 10%;
+	}
+	.dark {
+		--background: 240 10% 3.9%;
 
-    --card: 240 10% 3.9%;
+		--foreground: 0 0% 98%;
 
-    --card-foreground: 0 0% 98%;
+		--card: 240 10% 3.9%;
 
-    --popover: 240 10% 3.9%;
+		--card-foreground: 0 0% 98%;
 
-    --popover-foreground: 0 0% 98%;
+		--popover: 240 10% 3.9%;
 
-    --primary: 0 0% 98%;
+		--popover-foreground: 0 0% 98%;
 
-    --primary-foreground: 240 5.9% 10%;
+		--primary: 0 0% 98%;
 
-    --secondary: 240 3.7% 15.9%;
+		--primary-foreground: 240 5.9% 10%;
 
-    --secondary-foreground: 0 0% 98%;
+		--secondary: 240 3.7% 15.9%;
 
-    --muted: 240 3.7% 15.9%;
+		--secondary-foreground: 0 0% 98%;
 
-    --muted-foreground: 240 5% 64.9%;
+		--muted: 240 3.7% 15.9%;
 
-    --accent: 240 3.7% 15.9%;
+		--muted-foreground: 240 5% 64.9%;
 
-    --accent-foreground: 0 0% 98%;
+		--accent: 240 3.7% 15.9%;
 
-    --destructive: 0 62.8% 30.6%;
+		--accent-foreground: 0 0% 98%;
 
-    --destructive-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
 
-    --border: 240 3.7% 15.9%;
+		--destructive-foreground: 0 0% 98%;
 
-    --input: 240 3.7% 15.9%;
+		--border: 240 3.7% 15.9%;
 
-    --ring: 240 4.9% 83.9%;
+		--input: 240 3.7% 15.9%;
 
-    --chart-1: 220 70% 50%;
+		--ring: 240 4.9% 83.9%;
 
-    --chart-2: 160 60% 45%;
+		--chart-1: 220 70% 50%;
 
-    --chart-3: 30 80% 55%;
+		--chart-2: 160 60% 45%;
 
-    --chart-4: 280 65% 60%;
+		--chart-3: 30 80% 55%;
 
-    --chart-5: 340 75% 55%
-  }
+		--chart-4: 280 65% 60%;
+
+		--chart-5: 340 75% 55%;
+	}
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply font-sans;
-    @apply bg-background text-foreground;
-  }
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply font-sans;
+		@apply bg-background text-foreground;
+	}
 }
-
-
 
 /* Watermark for sections */
 .section-watermark {
-  position: relative;
+	position: relative;
+	padding: 5rem 16rem;
 }
 
 .section-watermark::before,
 .section-watermark::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  opacity: 0.2; /* Transparency for watermark effect */
+	content: "";
+	position: absolute;
+	z-index: 1;
+	opacity: 0.2;
 }
 
 /* Orange circle in top-left corner */
 .section-watermark::before {
-  bottom: 0;
-  left: 0;
-  width: 10rem; /* Adjust size as needed */
-  height: 10rem;
-  background-color: var(--color-orange);
-  border-radius: 50%; /* Makes it circular */
+	bottom: 0;
+	left: 0;
+	width: 10rem;
+	height: 10rem;
+	background-color: var(--color-orange);
+	border-radius: 50%;
 }
 
 /* Blue pipe shape in bottom-right corner */
 .section-watermark::after {
-  top: 0;
-  right: 0;
-  width: 12rem; /* Adjust width as needed */
-  height: 1rem; /* Pipe height */
-  background-color: var(--color-blue);
-  border-radius: 0.5rem; /* Rounded pipe edges */
+	top: 0;
+	right: 0;
+	width: 12rem;
+	height: 1rem;
+	background-color: var(--color-blue);
+	border-radius: 0.5rem;
+}
+
+/* when device is medium or small then padding will be 5 rem and 2 rem of section watermark class */
+@media (max-width: 1024px) {
+	.section-watermark {
+		padding: 5rem 2rem;
+	}
 }
