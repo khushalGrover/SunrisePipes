@@ -1,7 +1,3 @@
-import {
-    Carousel,
-    CarouselContent,
-} from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle, CardHeader, CardDescription, CardFooter } from "@/components/ui/card";
