@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
 import ContactPage from "./components/pages/ContactPage";
 import ProductsPage from "./components/pages/ProductsPage";
+import BrochurePage from "./components/pages/BrochurePage";
 import "./index.css"; // Import Tailwind CSS here
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/brochure" element={<BrochurePage />} />
         <Route path="/products" element={<ProductsPage />} />
         {/* Add other routes here */}
       </Routes>

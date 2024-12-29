@@ -10,9 +10,10 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import { Download } from 'lucide-react'
 
 export function BrochureButton() {
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const [isDialogOpen, setIsDialogOpen] = useState(true)
 
   const handleDownload = () => {
     console.log("Downloading brochure...")
@@ -28,7 +29,10 @@ export function BrochureButton() {
   return (
     <AlertDialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
       <AlertDialogTrigger asChild>
-        <h1>Brochure</h1>
+        <div className="h-[200px] flex items-center justify-center">
+          <h1 className="w-auto pr-3">click to download</h1>
+          <Download size={20} />
+        </div>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>

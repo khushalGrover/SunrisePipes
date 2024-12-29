@@ -1,8 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle, CardHeader, CardDescription, CardFooter } from "@/components/ui/card";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel"
 
 export function ProductsGrid() {
+
     const products = {
         1: {
             id: 1,
@@ -10,7 +16,7 @@ export function ProductsGrid() {
             bis: "IS: 4984:2016",
             description:
                 "HDPE Pipes are manufactured from virgin prime-grade HDPE (High-Density Polyethylene) as per BIS specifications (IS: 4984:2016). They are used all over the world for applications such as water mains, gas mains, sewer mains, slurry transfer lines, rural irrigation, fire systems, etc.",
-            imageUrls: ["./images/hdpe5.png", "./images/hdpe2.png", "./images/hdpe3.png", "./images/hdpe4.png", "./images/hdpe1.png"],
+            imageUrls: ["./hdpe1.png", "./hdpe2.png", "./hdpe3.png", "./hdpe4.png", "./hdpe5.png", "./hdpe7.png", "./hdpe0.jpg"],
             minRange: 20,
             maxRange: 200,
             material: ["PE-63", "PE-80", "PE-100"],
@@ -31,7 +37,7 @@ export function ProductsGrid() {
             bis: "IS: 17425",
             description:
                 "Sprinkler irrigation is an efficient method of delivering water to crops through a system of pipes, pumps, and sprinklers. The Indian Standard IS-17425 specifies the guidelines and requirements for the design, installation, and maintenance of sprinkler irrigation systems, ensuring optimal water management in agricultural practices.",
-            imageUrls: ["", ""],
+            imageUrls: ["./sprinkler.png", "./Sprinkler3.png", "./sprinkler4.png", "./sprinkler5.png", "./sprinkler2.png", "./sprinkler6.png", "./sprinkler7.png"],
             minRange: 20,
             maxRange: 140,
             material: ["PE-63"],
@@ -51,7 +57,7 @@ export function ProductsGrid() {
             bis: "IS: 12786:1989",
             description:
                 "The Mini Sprinkler Irrigation System is specifically designed for agricultural use and offers efficient and reliable irrigation solutions. Crafted from 100% premium polyethylene granules, it meets the stringent quality standards outlined in IS: 12786 - 1989, ensuring exceptional performance and durability.",
-            imageUrls: ["", ""],
+            imageUrls: ["./micro-sprinkler3.png", "./micro-sprinkler0.png", "./micro-sprinkler2.png", "./micro-sprinkler4.png", "./micro-sprinkler3.png", "./micro-sprinkler5.png"],
             minRange: 20,
             maxRange: 140,
             material: ["PE-63"],
@@ -72,7 +78,7 @@ export function ProductsGrid() {
             bis: "IS: 4227",
             description:
                 "MDPE Pipes are manufactured from virgin prime-grade MDPE (Medium-Density Polyethylene) as per BIS specifications (IS: 4427). The piping system is designed for water supply applications, including the transportation of raw water for treatment, potable water for human consumption, and water for general use.",
-            imageUrls: ["", ""],
+            imageUrls: ["mdpe1.png", "./mdpe2.png", "./mdpe3.png", "./mdpe4.png", "./mdpe5.png", "./mdpe6.png", "./mdpe.png"],
             minRange: 20,
             maxRange: 140,
             material: ["PE-80", "PE-100"],
@@ -98,33 +104,76 @@ export function ProductsGrid() {
 
                         {/* Product Images */}
                         <div className="h-full w-full grid gap-4 md:w-1/2">
-                            <div>
-                                <img
-                                    className="h-auto max-w-full rounded-lg"
-                                    src={product.imageUrls[0] || "https://via.placeholder.com/300"} // Fallback image
-                                    alt={product.name}
-                                />
-                            </div>
-                            <div className="flex gap-4">
-                                {product.imageUrls.slice(1).map((url, index) => (
-                                    <div key={index}>
-                                        <img
-                                            className="h-[100px] max-w-full rounded-lg"
-                                            src={url || "https://via.placeholder.com/100"} // Fallback image
-                                            alt={`Thumbnail ${index + 1}`}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
+
+                            <CardHeader className="h-full w-full">
+                                <CardTitle>{product.name}</CardTitle>
+                                <CardDescription>{product.description}</CardDescription>
+                                <CardDescription className="flex space-x-2 pb-4">
+                                    <Badge variant={"secondary"}>{product.bis}</Badge>
+                                </CardDescription>
+
+                            </CardHeader>
+
+
+                            <Carousel
+                                opts={{
+                                    align: "start",
+                                    loop: true,
+                                }}
+                                className={"w-full "}
+                            >
+                                <CarouselContent>
+                                    {product.imageUrls.slice(1).map((url, index) => (
+                                        <CarouselItem key={index} className="basis-1/2 md:basis-1/3 ">
+                                            <img
+                                                className="h-full rounded-lg bg-secondary border"
+                                                src={url || "https://via.placeholder.com/100"} // Fallback image
+                                                alt={`Thumbnail ${index + 1}`}
+                                            />
+                                        </CarouselItem>
+                                    ))}
+                                </CarouselContent>
+                            </Carousel>
+
+
                         </div>
+
+
 
                         {/* Product Details */}
                         <CardHeader className="h-full w-full md:w-1/2">
-                            <CardTitle>{product.name}</CardTitle>
-                            <CardDescription>{product.description}</CardDescription>
-                            <CardDescription className="flex space-x-2 pb-4">
-                                <Badge variant={"secondary"}>{product.bis}</Badge>
-                            </CardDescription>
+                            <div>
+                                <div className="flex flex-col justify-center md:flex-row gap-4">
+                                    <Card className="p-4 min-w-1/2">
+                                        <CardTitle>Material</CardTitle>
+                                        <CardDescription>
+                                            <ul className="list-disc list-inside">
+                                                {product.material.map((material, index) => (
+                                                    <li key={index}>{material}</li>
+                                                ))}
+                                            </ul>
+                                        </CardDescription>
+                                    </Card>
+
+                                    <Card className="p-4">
+                                        <CardTitle>Pressure</CardTitle>
+                                        <CardDescription>
+                                            <ul className="list-disc list-inside">
+                                                {product.pressure.map((pressure, index) => (
+                                                    <li key={index}>{pressure} bar</li>
+                                                ))}
+                                            </ul>
+                                        </CardDescription>
+                                    </Card>
+
+                                    <Card className="p-4">
+                                        <CardTitle>Range</CardTitle>
+                                        <CardDescription>
+                                            {product.minRange}mm - {product.maxRange}mm
+                                        </CardDescription>
+                                    </Card>
+                                </div>
+                            </div>
 
                             <CardTitle>Silent Features</CardTitle>
                             <ul className="list-disc list-inside">
@@ -136,38 +185,7 @@ export function ProductsGrid() {
                     </div>
 
                     {/* Additional Details */}
-                    <div>
-                        <div className="flex flex-col justify-center md:flex-row gap-4">
-                            <Card className="p-4 min-w-1/2">
-                                <CardTitle>Material</CardTitle>
-                                <CardDescription>
-                                    <ul className="list-disc list-inside">
-                                        {product.material.map((material, index) => (
-                                            <li key={index}>{material}</li>
-                                        ))}
-                                    </ul>
-                                </CardDescription>
-                            </Card>
 
-                            <Card className="p-4">
-                                <CardTitle>Pressure</CardTitle>
-                                <CardDescription>
-                                    <ul className="list-disc list-inside">
-                                        {product.pressure.map((pressure, index) => (
-                                            <li key={index}>{pressure} bar</li>
-                                        ))}
-                                    </ul>
-                                </CardDescription>
-                            </Card>
-
-                            <Card className="p-4">
-                                <CardTitle>Range</CardTitle>
-                                <CardDescription>
-                                    {product.minRange}mm - {product.maxRange}mm
-                                </CardDescription>
-                            </Card>
-                        </div>
-                    </div>
 
                     {/* Footer */}
                     <CardFooter>

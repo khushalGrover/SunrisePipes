@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from 'lucide-react';
-import { BrochureButton } from "@/components/ui/BrochureButton";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+// import { Switch } from "@/components/ui/switch"
 
 const HeaderMenu = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -13,11 +12,12 @@ const HeaderMenu = () => {
         { href: "/", label: "Home" },
         { href: "/products", label: "Products" },
         { href: "/contact", label: "Contact" },
+        { href: "/brochure", label: "Brochure" },
     ]
 
-    function handleToggleTheme() {
-        // code of toggling theme
-    }
+    // function handleToggleTheme() {
+    //     // code of toggling theme
+    // }
     return (
         <header className="sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="flex h-14 w-full items-center">
@@ -39,15 +39,9 @@ const HeaderMenu = () => {
                                 {item.label}
                             </Link>
                         ))}
-                        <Link
+                        
 
-                            to="/"
-                            className="transition-colors hover:text-foreground/80 text-foreground/60"
-                        >
-                            <BrochureButton />
-                        </Link>
-
-                        <Switch id="theme-mode" onCheckedChange={handleToggleTheme} />
+                        {/* <Switch id="theme-mode" onCheckedChange={handleToggleTheme} /> */}
                     </nav>
                 </div>
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -79,13 +73,7 @@ const HeaderMenu = () => {
                                     {item.label}
                                 </Link>
                             ))}
-                            <Link
-
-                                to="/"
-                                className="transition-colors hover:text-foreground/80 text-foreground/60"
-                            >
-                                <BrochureButton />
-                            </Link>
+                            
                         </nav>
                     </SheetContent>
                 </Sheet>
@@ -95,7 +83,7 @@ const HeaderMenu = () => {
                             <span className="text-2xl font-bold">
                                 <span className="text-yellow-500">Sunrise</span>
                                 <span className="text-orange-500">Pipes</span>
-                                <span className="text-blue-500">.ina</span>
+                                <span className="text-blue-500">.in</span>
                             </span>
                         </Link>
                     </div>
