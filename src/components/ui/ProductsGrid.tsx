@@ -99,7 +99,7 @@ export function ProductsGrid() {
         <div>
 
             {Object.values(products).map((product) => (
-                <Card key={product.id} className="mx-2 my-8 space-x-2">
+                <Card key={product.id} className="mx-2 my-8 mt-16 space-x-2">
                     <div className="h-auto mb-4 w-full flex flex-col md:flex-row md:full">
 
                         {/* Product Images */}

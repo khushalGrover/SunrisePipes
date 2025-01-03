@@ -10,6 +10,7 @@ const HeaderMenu = () => {
 
     const menuItems = [
         { href: "/", label: "Home" },
+        { href: "/about", label: "About" },
         { href: "/products", label: "Products" },
         { href: "/contact", label: "Contact" },
         { href: "/brochure", label: "Brochure" },
@@ -19,7 +20,7 @@ const HeaderMenu = () => {
     //     // code of toggling theme
     // }
     return (
-        <header className="sticky top-0 z-50 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header className="fixed top-0 w-full border-b backdrop-blur supports-[backdrop-filter]:bg-background/60 z-[100]">
             <div className="flex h-14 w-full items-center">
                 <div className="hidden md:flex w-full justify-around">
                     <Link to="/" className="mr-6 flex items-center space-x-2">
@@ -54,8 +55,8 @@ const HeaderMenu = () => {
                             <span className="sr-only">Toggle Menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="left" className="pr-0">
-                        <Link to="https://sunrisepipes-3d.vercel.app/" className="flex items-center" onClick={() => setIsOpen(false)}>
+                    <SheetContent side="left" className="pr-0 z-[101]">
+                        <Link to="/" className="flex items-center" onClick={() => setIsOpen(false)}>
                             <span className="text-2xl font-bold">
                                 <span className="text-yel">Sunrise</span>
                                 <span className="text-ora">Pipes</span>

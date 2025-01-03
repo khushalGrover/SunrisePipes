@@ -1,13 +1,13 @@
 import { HeaderMenu } from "@/components/ui/HeaderMenu";
-import HeroLanding from "@/components/ui/HeroLanding";
+import HeroAboutus from "@/components/ui/HeroAboutus";
 import CTASection from "@/components/ui/CTASection";
 import { Footer } from "@/components/ui/Footer";
 
-export default function LandingPage() {
+export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col bg-primary-foreground">
       <HeaderMenu />
-      <HeroLanding />
+      <HeroAboutus/>
       <CTASection />
       <Footer />
     </div>

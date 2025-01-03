@@ -114,7 +114,6 @@
 		--chart-5: 340 75% 55%;
 	}
 }
-
 @layer base {
 	* {
 		@apply border-border;
@@ -124,44 +123,70 @@
 		@apply bg-background text-foreground;
 	}
 }
-
-/* Watermark for sections */
-.section-watermark {
-	position: relative;
-	padding: 5rem 16rem;
+body {
+	padding: 0;
+	margin: 0;
+	/* background-color: red; */
+	width: 100vw;
+	height: 100vh;
+}
+section {
+	padding: 5rem 10rem;
 }
 
-.section-watermark::before,
-.section-watermark::after {
+.hero-section {
+	background-color: var(--color-blue); 
+	background-image: url("./pipes-BG.png");
+	/* background-image:  radial-gradient(circle at 50% 50%, #18181b00 0%, #181818ff 75%), url("./pipes-BG.png"); */
+	background-image: linear-gradient(0deg, #18181b 0%, #0000 75%), url("./pipes-BG.png");
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+}
+
+.product-logo-section {
+	position: relative;
+	background-image: url("./hdpe7.png");
+	background-size: corner;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.choose-us-section {
+	position: relative;
+	background-color: black;
+	background-image: url("./sprinkler2.png");
+	background-image: linear-gradient(180deg, #181818 10%, #00000075 75%), url("./sprinkler2.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+/* 
+.choose-us-section::before {
 	content: "";
 	position: absolute;
-	z-index: 1;
-	opacity: 0.2;
-}
-
-/* Orange circle in top-left corner */
-.section-watermark::before {
-	bottom: 0;
-	left: 0;
-	width: 10rem;
-	height: 10rem;
-	background-color: var(--color-orange);
-	border-radius: 50%;
-}
-
-/* Blue pipe shape in bottom-right corner */
-.section-watermark::after {
 	top: 0;
-	right: 0;
-	width: 12rem;
-	height: 1rem;
-	background-color: var(--color-blue);
-	border-radius: 0.5rem;
-}
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+} 
+*/
+
+
 
 /* when device is medium or small then padding will be 5 rem and 2 rem of section watermark class */
-@media (max-width: 1024px) {
-	.section-watermark {
+
+@media (max-width: 768px) {
+	.product-logo-section {
+		padding: 5rem 2rem;
+	}
+	section {
 		padding: 5rem 2rem;
 	}
 }
