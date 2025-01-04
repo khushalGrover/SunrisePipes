@@ -136,7 +136,7 @@ section {
 
 .hero-section {
 	background-color: var(--color-blue); 
-	background-image: url("./pipes-BG.png");
+	background-image: url("/pipes-BG.png");
 	/* background-image:  radial-gradient(circle at 50% 50%, #18181b00 0%, #181818ff 75%), url("./pipes-BG.png"); */
 	background-image: linear-gradient(0deg, #18181b 0%, #0000 75%), url("./pipes-BG.png");
 	position: relative;
@@ -148,7 +148,7 @@ section {
 
 .product-logo-section {
 	position: relative;
-	background-image: url("./hdpe7.png");
+	background-image: url("/hdpe7.png");
 	background-size: corner;
 	background-position: center;
 	background-repeat: no-repeat;
