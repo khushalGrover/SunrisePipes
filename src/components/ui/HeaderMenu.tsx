@@ -10,10 +10,11 @@ const HeaderMenu = () => {
 
     const menuItems = [
         { href: "/", label: "Home" },
-        { href: "/about", label: "About" },
         { href: "/products", label: "Products" },
-        { href: "/contact", label: "Contact" },
+        { href: "/gallery", label: "Gallery" },
         { href: "/brochure", label: "Brochure" },
+        { href: "/about", label: "About" },
+        { href: "/contact", label: "Contact" },
     ]
 
     // function handleToggleTheme() {

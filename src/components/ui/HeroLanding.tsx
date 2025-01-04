@@ -1,8 +1,8 @@
 import { Card} from '@/components/ui/card'
 import { CalendarHeart, Forklift, ListChecks } from 'lucide-react';
+import GallerySmallGrid from '@/components/ui/GallerySmallGrid';
 
 export default function HeroLanding() {
-
   return (
 
     <main>
@@ -71,7 +71,8 @@ export default function HeroLanding() {
           </Card>
         </div>
       </section>
-
+      <GallerySmallGrid />
+      
       {/* <section className="text-center w-full flex-1 flex items-center justify-center flex-col">
         <h1 className="text-xl font-montserrat font-extrabold mb-4 md:text-2xl">
           <span className="text-yel">Our</span>
