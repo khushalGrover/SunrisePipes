@@ -3,10 +3,7 @@ import { ArrowRight, Phone } from 'lucide-react'
 import { Link } from "react-router-dom";
 
 export default function CTASection() {
-const handleGetStarted = () => {
-    // code to redirect to product page by using link from routes
 
-}
 
     return (
         <section className="bg-primary py-16 md:py-24 z-[10]">
