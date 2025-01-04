@@ -1,4 +1,5 @@
 import { Card} from '@/components/ui/card'
+import { CalendarHeart, Forklift, ListChecks } from 'lucide-react';
 
 export default function HeroLanding() {
 
@@ -54,17 +55,17 @@ export default function HeroLanding() {
         </h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-2">
           <Card className="flex flex-col max-w-5xl p-2 items-center">
-            <img src="https://placehold.co/100x100" alt="Reliability" />
+          <CalendarHeart color='#307fe2' size={50}/>
             <p className="text-blu font-semibold text-lg mb-1">3 Decades of Experience</p>
             <p>We bring 3 decades of experience inherited from our parent company, SHIV SHAKTI PIPE UDYOG, ensuring unmatched expertise and reliability.</p>
           </Card>
           <Card className="flex flex-col max-w-5xl p-2 items-center">
-            <img src="https://placehold.co/100x100" alt="Quality" />
+            <Forklift color='#307fe2' size={50}/>
             <p className="text-blu font-semibold text-lg mb-1">Advanced Techniques</p>
             <p>Our advanced manufacturing techniques utilize state-of-the-art technology to produce high-quality HDPE pipes and accessories that meet industry standards.</p>
           </Card>
           <Card className="flex flex-col max-w-5xl p-2 items-center">
-            <img src="https://placehold.co/100x100" alt="Durability" />
+          <ListChecks color='#307fe2' size={50}/>
             <p className="text-blu font-semibold text-lg mb-1">Durability</p>
             <p>We rigorously test every product to guarantee durability, efficiency, and superior performance, making us a trusted partner for all your piping solutions.</p>
           </Card>
