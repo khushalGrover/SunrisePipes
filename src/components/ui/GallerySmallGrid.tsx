@@ -51,7 +51,7 @@ export default function GallerySmallGrid() {
           <Button size="lg" variant="outline" className="bg-primary text-center text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
             View Gallery
           </Button>
-        </Link>git
+        </Link>
       </div>
     </div>
   )
