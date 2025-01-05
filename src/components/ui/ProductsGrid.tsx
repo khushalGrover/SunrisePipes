@@ -126,7 +126,7 @@ export function ProductsGrid() {
                                     {product.imageUrls.slice(1).map((url, index) => (
                                         <CarouselItem key={index} className="basis-1/2 md:basis-1/3 ">
                                             <img
-                                                className="h-full rounded-lg bg-secondary border aspect-square"
+                                                className="rounded-lg bg-secondary border aspect-square"
                                                 src={url || "https://via.placeholder.com/100"} // Fallback image
                                                 alt={`Thumbnail ${index + 1}`}
                                             />
