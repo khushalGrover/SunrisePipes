@@ -11,15 +11,17 @@ const photos: Photo[] = [
   { id: 1, src: "Deo_1.2.png", alt: "DeoPlast Post 1" },
   { id: 2, src: "Deo_2.0.png", alt: "DeoPlast Post 2" },
   { id: 3, src: "Deo_3.0.png", alt: "DeoPlast Post 3" },
-  { id: 2, src: "jal-1.png", alt: "JalShakti Post 1" },
-  { id: 2, src: "jal-2.png", alt: "JalShakti Post 2" },
-  { id: 2, src: "jal-3.png", alt: "JalShakti Post 3" },
-  { id: 4, src: "Deo_4.0.png", alt: "DeoPlast Post 4" },
-  { id: 5, src: "Deo_5.0.png", alt: "DeoPlast Post 5" },
-  { id: 6, src: "Deo_6.0.png", alt: "DeoPlast Post 6" },
-  { id: 9, src: "Deo_4.0.png", alt: "DeoPlast Post 9" }, // repeated
-  { id: 7, src: "Deo_7.0.png", alt: "DeoPlast Post 7" },
-  { id: 8, src: "Deo_4.0.png", alt: "DeoPlast Post 8" }, // repreated
+  { id: 4, src: "jal-1.png", alt: "JalShakti Post 1" },
+  { id: 5, src: "jal-2.png", alt: "JalShakti Post 2" },
+  { id: 6, src: "jal-3.png", alt: "JalShakti Post 3" },
+  { id: 7, src: "Deo_4.0.png", alt: "DeoPlast Post 4" },
+  { id: 8, src: "Deo_5.0.png", alt: "DeoPlast Post 5" },
+  { id: 9, src: "Deo_6.0.png", alt: "DeoPlast Post 6" },
+  { id: 10, src: "Deo_7.0.png", alt: "DeoPlast Post 7" },
+  { id: 11, src: "Deo_8.0.png", alt: "DeoPlast Post 8" },
+  { id: 12, src: "Deo_9.0.png", alt: "DeoPlast Post 9" },
+  { id: 13, src: "Deo_10.0.png", alt: "DeoPlast Post 10" },
+  { id: 14, src: "Deo_11.0.png", alt: "DeoPlast Post 11" },
 ]
 
 export default function GalleryGrid() {
